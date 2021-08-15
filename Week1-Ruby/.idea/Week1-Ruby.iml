@@ -11,6 +11,18 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.14.2, asdf: 3.0.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.6, asdf: 3.0.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rbs (v1.0.4, asdf: 3.0.2) [gem]" level="application" />
+  </component>
+  <component name="RakeTasksCache">
+    <option name="myRootTask">
+      <RakeTaskImpl id="rake">
+        <subtasks>
+          <RakeTaskImpl description="Run tests" fullCommand="test" id="test" />
+          <RakeTaskImpl description="" fullCommand="default" id="default" />
+        </subtasks>
+      </RakeTaskImpl>
+    </option>
   </component>
 </module>
