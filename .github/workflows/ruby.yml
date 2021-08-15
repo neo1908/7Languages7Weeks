@@ -14,9 +14,9 @@ on:
     branches: [ master ]
 
 jobs:
-  env:
-    working-directory: './Week1-Ruby'
   test:
+    env:
+      working-directory: './Week1-Ruby'
 
     runs-on: ubuntu-latest
     strategy:
@@ -35,3 +35,4 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests
       run: bundle exec rake
+      working-directory: ${{env.working-directory}}
