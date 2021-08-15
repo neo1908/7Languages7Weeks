@@ -14,9 +14,9 @@ on:
     branches: [ master ]
 
 jobs:
-  env:
-    working-directory: './Week1-Ruby'
   test:
+    env:
+      working-directory: './Week1-Ruby'
 
     runs-on: ubuntu-latest
     strategy:
