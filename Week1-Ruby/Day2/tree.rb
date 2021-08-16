@@ -16,7 +16,6 @@ class Tree
   def visit(&block)
     block.call self
   end
-
 end
 
 ruby_tree = Tree.new('Ruby', [Tree.new('Reia'), Tree.new('MacRuby')])
