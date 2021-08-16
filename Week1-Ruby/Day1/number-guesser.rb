@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def random_int
   # Print does not add a \n but it's a good idea to flush
   print 'Please choose range to guess in!'
@@ -7,11 +9,12 @@ def random_int
   rand(Integer(range))
 end
 
+# @return [nil]
 def run_game
   random = random_int
   attempts = 0
-  while attempts < 3 do
-    attempts = attempts+1
+  while attempts < 3
+    attempts += 1
     print 'What is your guess? '
     $stdout.flush
     guess = Integer(gets)
